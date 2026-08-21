@@ -1,0 +1,76 @@
+#layout {
+  display: grid;
+  grid-template-columns: 25rem 51.25rem;
+  gap: 20px;
+  justify-content: center;
+  margin: 5rem;
+
+}
+
+main {
+  overflow: auto;
+  width: 100%;
+  max-width: 51.25rem;
+  margin-right: auto;
+  border-radius: 12px;
+  padding: 5rem 8.125rem;
+  background-color: var(--shape-body);
+
+  & h1 {
+    font: 700 1.75rem "Baloo 2", sans-serif;
+    color: var(--text-heading);
+    margin-bottom: 2.5rem;
+  }
+
+  & fieldset {
+    border: none;
+  }
+
+  & legend {
+    font: 700 1.125rem "Baloo 2", sans-serif;
+    color: var(--text-heading);
+
+    display: flex;
+
+    gap: .75rem;
+
+    & img {
+      width: 1.5rem;
+    }
+  }
+
+  & label {
+    font: var(--by-sm);
+    color: var(--text-body);
+  }
+}
+
+
+aside {
+  margin-left: auto;
+  padding: 2rem;
+  overflow: none;
+  width: 25rem;
+  height: 45.5rem;
+
+  background: url(../assets/Background.png) no-repeat top/contain;
+  border-radius: 12px;
+
+
+  & img {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  & h1 {
+    font: 400 2.5rem "Leckerli One", cursive;
+    color: var(--pink);
+    margin-bottom: .25rem;
+  }
+
+  & p {
+    font: 300 1rem "Open Sans", sans-serif;
+    color: var(--text-heading);
+  }
+}
