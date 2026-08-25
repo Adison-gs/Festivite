@@ -73,3 +73,8 @@ aside {
     color: var(--text-heading);
   }
 }
+
+fieldset + fieldset{
+   margin-top: 3rem;
+}
+ 

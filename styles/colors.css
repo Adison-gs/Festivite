@@ -1,0 +1,89 @@
+.colors {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  height: 2.5rem;
+margin-inline:9px ;
+  margin-top: 1rem;
+  box-sizing: border-box;
+   
+
+  label[for="blue"] {
+    background-color: var(--brand-light);
+  }
+
+  label[for="dark-blue"] {
+    background-color: var(--navy);
+  }
+
+  label[for="purple"] {
+    background-color: var(--purple);
+  }
+
+  label[for="fuschia"] {
+    background-color: var(--fuschia);
+  }
+
+  label[for="pink"] {
+    background-color: var(--pink);
+  }
+
+  label[for="dark-orange"] {
+    background-color: var(--danger);
+  }
+
+  label[for="orange"] {
+    background-color: var(--orange);
+  }
+
+  label[for="yellow"] {
+    background-color: var(--yellow);
+  }
+
+  label[for="lime"] {
+    background-color: var(--lime);
+  }
+
+  label[for="green"] {
+    background-color: var(--green);
+  }
+
+  label[for="light-blue"] {
+    background-color: var(--cyan);
+  }
+}
+
+.cor {
+  display: flex;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+}
+
+.cor input {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.cor label {
+  position: absolute;
+  inset: 0;
+
+  width: 2rem;
+  height: 2rem;
+  margin: 0;
+
+  box-shadow: 0 0 0 5px #2D3136, 0 0 0 6px var(--shape-button);
+  border-radius: 50%;
+}
+
+.cor input:checked+label {
+  box-shadow:
+    0 0 0 5px #2D3136,
+    0 0 0 6px var(--shape-button),
+    0 0 0 8px var(--brand-light);
+}
