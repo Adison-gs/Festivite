@@ -74,6 +74,10 @@ aside {
   }
 }
 
+input:hover,textarea:hover{
+   background-color: var(--shape-hover);
+}
+
 fieldset + fieldset{
    margin-top: 3rem;
 }
