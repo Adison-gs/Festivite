@@ -92,12 +92,12 @@
   box-shadow: 0 0 0 5px #2D3136, 0 0 0 6px var(--shapehover);
 }
 
-.event-wrapper{
-  margin-block:1.75rem;
+.event-wrapper {
+  margin-block: 1.75rem;
 }
 
 .input-radio {
-  margin-top:1rem;
+  margin-top: 1rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
   gap: 1rem;
@@ -126,9 +126,9 @@
   }
 
   & img {
-   
+
     border-radius: .5rem;
-    max-width:7.5rem;
+    max-width: 7.5rem;
   }
 
   &:has(input:checked) {
@@ -140,3 +140,4 @@
   }
 
 }
+
