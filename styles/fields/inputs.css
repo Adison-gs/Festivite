@@ -17,7 +17,6 @@ textarea{
   height:8.5rem;
 }
 
-
 input:focus,
 textarea:focus {
   border: 1px solid red;
@@ -97,4 +96,18 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
   }
 
 
+}
+
+
+.input-contact{
+  display: flex;
+  gap: 1rem;
+  margin-block: 1rem 3rem;
+  
+ 
+  & div{
+    width: 100%;
+  
+  }
+  
 }

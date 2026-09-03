@@ -1,0 +1,16 @@
+#generate-invite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .75rem;
+  background-color: var(--brand-dark);
+  color: var(--text-heading);
+  font: 600 1rem "Open Sans", sans-serif;
+  border: none;
+  border-radius: .75rem;
+  margin-top: 3rem;
+  margin-left: auto;
+
+  width: 11.0625rem;
+  height: 3rem;
+}
