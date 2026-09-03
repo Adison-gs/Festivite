@@ -1,6 +1,3 @@
 @import url(./global.css);
 @import url(./layout.css);
-@import url(./sobre.css);
-@import url(./perso.css);
-@import url(./radio.css);
-@import url(./theme.css);
+@import url(./fields/index.css);
