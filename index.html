@@ -289,7 +289,8 @@
                   <label for="theme"></label>
                 </div>
               </div>
-              <label for="theme">Escuro</label>
+              <span class="escuro theme-text">Escuro</span>
+              <span class="claro theme-text">Claro</span>
             </div>
 
           </div>
@@ -300,13 +301,14 @@
 
             <div class="cover-inner">
               <div class="send-cover">
-                <input type="file" name="cover" id="cover" accept="image/*">
+                <input type="file" name="cover" id="cover" accept="image/png" required>
                 <img src="./assets/icons/file.svg" alt="">
                 <span>Selecionar</span>
               </div>
-
-              <label for="cover">Nenhum arquivo selecionado</label>
+              <span class="file-none file-text">Nenhum arquivo selecionado</span>
+              <span class="file-selected file-text">image.png</span>
             </div>
+            
           </div>
         </div>
       </fieldset>

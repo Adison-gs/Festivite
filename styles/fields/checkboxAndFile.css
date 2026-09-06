@@ -58,55 +58,6 @@
 .theme-switch:has(input:checked) {
   background-color: var(--brand-light);
 }
-
-.claro {
-  display: none;
-}
-
-.theme-switch:has(.check-input:checked) .escuro {
-  display: none;
-}
-
-.theme-switch:has(.check-input:checked) .claro {
-  display: inline;
-}
-
-.cover-wrapper {
-  display: grid;
-
-  & .cover-inner {
-    display: flex;
-    align-items: center;
-    gap: .75rem;
-    margin-top: 1rem;
-  }
-
-  & .send-cover {
-    width: 7.4375rem;
-    height: 2.5rem;
-    position: relative;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    border-radius: .5rem;
-    background-color: var(--shape-button);
-    color: var(--text-heading);
-    font: var(--by-sm);
-
-    & input {
-      position: absolute;
-      inset: 0;
-      margin: 0;
-      max-width: 100%;
-      max-height: 100%;
-      opacity: 0;
-      cursor: pointer;
-    }
-  }
-}
-
 .checkbox-wrapper{
   display:grid;
   gap: .27rem;
@@ -158,4 +109,73 @@
   }
 
 }
+
+.claro {
+  display: none;
+}
+
+.theme-switch:has(input:checked) ~ .claro {
+  display: block;
+}
+.theme-switch:has(input:checked) ~ .escuro {
+  display: none ;
+}
+
+
+.theme-text, .file-text{
+  color: var(--text-heading);
+  font: var(--by-sm);
+}
+
+
+.cover-wrapper {
+  display: grid;
+
+  & .cover-inner {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    margin-top: 1rem;
+  }
+
+  & .send-cover {
+    width: 7.4375rem;
+    height: 2.5rem;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: .5rem;
+    background-color: var(--shape-button);
+    color: var(--text-heading);
+    font: var(--by-sm);
+
+    & input {
+      position: absolute;
+      inset: 0;
+      margin: 0;
+      max-width: 100%;
+      max-height: 100%;
+      opacity: 0;
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+.cover-wrapper:has(input[type="file"]:valid) .file-none {
+  display: none;
+}
+
+.cover-wrapper:has(input[type="file"]:invalid) .file-selected {
+  display: none;
+}
+
+
+
+
+
 
